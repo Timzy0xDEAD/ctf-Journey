@@ -40,10 +40,10 @@
 ### Task 12:
  Check Tryhackme social account in reddit
 ### Task 13:
+ Use https://www.dcode.fr/brainfuck-language
 ### Task 14:
- echo "44585d6b2368737c65252166234f20626d" | xxd -r -p | xxd -b
- 
- Use https://www.dcode.fr/chiffre-xor  for S1 XOR S2
+
+ ![alt text](image.png)
 ### Task 15:
  binwalk hell_1578018688127.jpg  
 
@@ -54,14 +54,25 @@
  cat hello_there.txt  
 ### Task 16:
  java -jar Stegsolve.jar
+
  java -jar Stegsolve.jar dark_1578020060816.png 
 ### Task 17:
+ zbarimg QRCTF_1579095601577.png
+
+ firefox https://soundcloud.com/user-86667759/thm-ctf-vol1
 ### Task 18:
+ Use https://archive.org/
 ### Task 19:
  use https://www.dcode.fr/vigenere-cipher
 ### Task 20:
  echo "obase=16; 581695969015253365094191591547859387620042736036246486373595515576333693" | bc | xxd -r -p 
 ### Task 21:
+ open flag_1578026731881.pcapng 
+
+ Using the http display filter allowed me to isolate and view only HTTP packets that contain the flag.
+
+
+
 
 
 
