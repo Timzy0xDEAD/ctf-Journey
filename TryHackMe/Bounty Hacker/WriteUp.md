@@ -6,7 +6,9 @@
 ![alt text](images/image.png)
 ### ftp Access
 ftp <IP address> 
+
  username anonymous 
+ 
  passsword anonymous
 
  ![alt text](images/image-1.png)
